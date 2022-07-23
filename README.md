@@ -1,5 +1,5 @@
 # Crework 
-# Everthing related to my Crework journey.
+### Everthing related to my Crework journey.
 
-# Home Page
+## Home Page
 <img src="./images/Crework_main_ss.jpeg" width="300px">
