@@ -1,0 +1,103 @@
+:root {
+    /* change page colors here */
+    --colorOfBody: #b5d5e6;
+    /* 1 place used */
+    --colorOfBackground: #5e5bbd; 
+    /* 1 place used */
+    --colorOfSignUpLogin: #f7f1f1; 
+    /* 1 place used */
+}
+
+/* extra large devices */
+@media only screen and (min-width: 1200px) {
+    main {
+        height: 850px;
+    }
+    #cover-image {
+        width: 50%;
+    }
+    #signup-login {
+        width: 50%;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 3%;
+    background-color: var(--colorOfBody);
+}
+
+main {
+    display: flex;
+    border-radius: 50px;
+    overflow: hidden;
+    perspective: 1px;
+    /* check these out on google */
+}
+
+#cover-image {
+    background-color: var(--colorOfBackground);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorOfSignUpLogin);
+    text-align: center;
+}
+
+#signup-form-container {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.companyTitle {
+    color: white;
+    font-size: 6rem;
+}
+
+form {
+    width: 50%;
+    padding: 0% 25% 0% 25%;
+    text-align: left;
+}
+
+p {
+    margin: 0;
+}
+
+input {
+    margin-top: 2%;
+    margin-bottom: 7%;
+}
+
+.signUp {
+    height: 2rem;
+    border: 0;
+    border-radius: 0.8rem;
+    background-color: var(--colorOfBackground);
+    color: var(--colorOfSignUpLogin);
+}
+
+.inputFields {
+    height: 1.8rem;
+    border-radius: 0.8rem;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
