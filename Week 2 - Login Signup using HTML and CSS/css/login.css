@@ -1,0 +1,239 @@
+:root {
+    --colorOfBody: white;
+    --colorOfBackground: black; 
+    --colorOfSignUpLogin: #31087B; 
+}
+
+/* extra large devices */
+@media only screen and (min-width: 1200px) {
+    main {
+        height: 850px;
+    }
+    #cover-image {
+        width: 50%;
+    }
+    #signup-login {
+        width: 50%;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 3%;
+    background-color: #E2DCC8;
+}
+
+main {
+    display: flex;
+    border-radius: 50px;
+    overflow: hidden;
+    perspective: 1px;
+    /* check these out on google */
+}
+
+#cover-image {
+    background-color: var(--colorOfBackground);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorOfSignUpLogin);
+    text-align: center;
+}
+
+#signup-form-container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.companyTitle {
+    /* color: white; */
+    font-size: 6rem;
+    background: linear-gradient(to right, #FA2FB5,#FFC23C);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+}
+
+form {
+    width: 50%;
+    padding: 0% 25% 0% 25%;
+    text-align: left;
+}
+
+p {
+    margin: 0;
+}
+
+input {
+    margin-top: 2%;
+    margin-bottom: 7%;
+}
+
+.signUp {
+    height: 2rem;
+    border-radius: 0.8rem;
+    background-color: var(--colorOfBody);
+    color: var(--colorOfBackground);
+    font-size: 1.3rem;
+}
+
+.signUp:hover {
+    background-color: var(--colorOfBackground);
+    color: var(--colorOfBody);
+    cursor: pointer;
+}
+
+.inputFields {
+    height: 1.8rem;
+    border-radius: 0.8rem;
+    background-color: var(--colorOfBody);
+}
+
+.width100 {
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.flexx {
+    display: flex;
+    flex-direction: column;
+    color: var(--colorOfBody);
+}
+
+.labelCol {
+    color: var(--colorOfBody);
+}
+
+.labelsInput {
+    padding-left: 2.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus, a:visited { text-decoration: none; color:#E2DCC8 }
+
+.jost {
+    font-family: 'Fraunces', serif;
+}
+.rubik {
+    font-family: 'Rubik', sans-serif;
+}
+.loginbut {
+    border-radius: 0.8rem;
+    width: 4rem;
+    height: 1.8rem;
+}
+.loginbut:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+h4 {
+    margin: 0;
+}
+
+.checkboxS {
+    display: flex;
+    padding-bottom: 3%;
+    justify-content: space-between;
+}
+
+.fonts {
+    font-size: 0.8rem;
+}
+
+.ORlabel {
+    padding-bottom: 3%;
+}
+
+.loginIcons {
+    display: flex;
+    width: 15rem;
+    height: 3rem;
+    padding-bottom: 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+i {
+    background-size: 60px 60px;
+}
+
+.iconsButton {
+    border-radius: 50%;
+    background: transparent;
+    background-color: white;
+    padding: 0;
+    width: 2.8rem;
+    height: 2.8rem;
+    border: 4px solid black;
+}
+
+.iconsButton:hover {
+    cursor: pointer;
+}
+
+.apple {
+    border: 4px solid grey;
+}
+
+.appleI {
+    color: grey;
+}
+
+.google {
+    border: 4px solid #4285F4;
+}
+
+.googleI {
+    color: #4285F4;
+}
+
+.fb {
+    border: 4px solid #4267B2;
+}
+
+.fbI {
+    color: #4267B2;
+}
+
+.iconsButton .tooltiptext {
+    visibility: hidden;
+    /* width: 120px; */
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 5px;
+    border: 1px solid black;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .iconsButton:hover .tooltiptext {
+    visibility: visible;
+  }

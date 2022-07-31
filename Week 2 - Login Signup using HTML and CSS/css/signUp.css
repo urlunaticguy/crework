@@ -1,11 +1,7 @@
 :root {
-    /* change page colors here */
-    --colorOfBody: #EEEEEE;
-    /* 1 place used */
-    --colorOfBackground: #222831; 
-    /* 1 place used */
-    --colorOfSignUpLogin: #00ADB5; 
-    /* 1 place used f7f1f1*/
+    --colorOfBody: white;
+    --colorOfBackground: black; 
+    --colorOfSignUpLogin: #31087B; 
 }
 
 /* extra large devices */
@@ -24,7 +20,7 @@
 body {
     margin: 0;
     padding: 3%;
-    background-color: var(--colorOfBody);
+    background-color: #E2DCC8;
 }
 
 main {
@@ -60,8 +56,12 @@ main {
 }
 
 .companyTitle {
-    color: white;
+    /* color: white; */
     font-size: 6rem;
+    background: linear-gradient(to right, #FA2FB5,#FFC23C);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
 }
 
 form {
@@ -84,6 +84,7 @@ input {
     border-radius: 0.8rem;
     background-color: var(--colorOfBody);
     color: var(--colorOfBackground);
+    font-size: 1.3rem;
 }
 
 .signUp:hover {
@@ -95,6 +96,7 @@ input {
 .inputFields {
     height: 1.8rem;
     border-radius: 0.8rem;
+    background-color: var(--colorOfBody);
 }
 
 .width100 {
@@ -108,12 +110,47 @@ input {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 0;
 }
 
 .flexx {
     display: flex;
+    flex-direction: column;
     gap: 0.7rem;
-    color: var(--colorOfBackground);
+    color: var(--colorOfBody);
+}
+
+.labelCol {
+    color: var(--colorOfBody);
+}
+
+.labelsInput {
+    padding-left: 2.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus, a:visited { text-decoration: none; color:#E2DCC8 }
+
+.jost {
+    font-family: 'Fraunces', serif;
+}
+.rubik {
+    font-family: 'Rubik', sans-serif;
+}
+.loginbut {
+    border-radius: 0.8rem;
+    width: 4rem;
+    height: 1.8rem;
+}
+.loginbut:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+h4 {
+    margin: 0;
 }

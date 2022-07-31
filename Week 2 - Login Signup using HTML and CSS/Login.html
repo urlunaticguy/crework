@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="./css/login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Rubik&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/7b3a89c63a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <section id="cover-image">
+            <h1 class="companyTitle jost">someBook.</h1>
+        </section>
+        <section id="signup-login">
+            <section id="signup-form-container">
+                <div class="flexx rubik">
+                    <h2><strong>Welcome Back!</strong></h2>
+                    <h4 style="color: #bfbfbf;"><strong>Login to continue</strong></h4>
+                </div>
+                
+
+                <form class="form">
+                    <label for="mail" class="labelCol labelsInput jost"><p>E-mail</p></label>
+                    <input class="inputFields" type="email" name="mail" placeholder="Enter your E-mail" required>
+                    <label for="password" class="labelCol labelsInput jost"><p>Password</p></label>
+                    <input class="inputFields" type="password" name="password" placeholder="Enter your password" required>
+                    <div class="checkboxS">
+                        <div>
+                            <input type="checkbox" name="remember" id="">
+                            <label class="labelCol jost fonts">
+                                Remember Me
+                            </label>
+                        </div>
+                        <div>
+                            <a href="" class="fonts">
+                                Forgot your password?
+                            </a>
+                        </div>
+                    </div>
+                    <button type="submit" class="signUp jost"><strong>Login</strong></button>
+                </form>
+
+                <label for="orText" class="labelCol jost ORlabel">
+                    -------------------- OR --------------------
+                </label>
+                <div class="loginIcons">
+                    <a href="https://www.apple.com/in/">
+                        <button class="iconsButton apple">
+                            <i class="fa-brands fa-apple fa-2xl appleI"></i>
+                            <span class="tooltiptext">Sign in with Apple</span>
+                        </button>
+                    </a>
+                    <a href="https://google.co.in/">
+                        <button class="iconsButton google">
+                            <i class="fa-brands fa-google fa-2xl googleI"></i>
+                            <span class="tooltiptext">Sign in with Google</span>
+                        </button>
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <button class="iconsButton fb">
+                            <i class="fa-brands fa-facebook-f fa-2xl fbI"></i>
+                            <span class="tooltiptext">Sign in with Facebook</span>
+                        </button>
+                    </a>
+                    <a href="https://github.com/">
+                        <button class="iconsButton">
+                            <i class="fa-brands fa-github fa-2xl"></i>
+                            <span class="tooltiptext">Sign in with Github</span>
+                        </button>
+                    </a>
+                    
+                </div>
+
+                <label class="labelCol jost">
+                    Need an account?
+                    <a href="./signUp.html">
+                        <button class="loginbut jost">SignUp</button>
+                    </a>
+                </label>
+                
+            </section>
+        </section>
+    </main>
+</body>
+</html>

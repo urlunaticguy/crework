@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign-Up Page</title>
+
+    <link rel="stylesheet" href="./css/signUp.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="cover-image">
+            <h1 class="companyTitle jost">someBook.</h1>
+        </section>
+        <section id="signup-login">
+            <section id="signup-form-container">
+                <div class="flexx rubik">
+                    <h2><strong>Sign Up</strong></h2>
+                    <h4 style="color: #bfbfbf;"><strong>It's free and easy !</strong></h4>
+                </div>
+                
+
+                <form class="form">
+                    <label for="name" class="labelCol labelsInput jost"><p>Name</p></label>
+                    <input class="inputFields" type="text" name="name" placeholder="Enter your Name" required>
+                    <label for="mail" class="labelCol labelsInput jost"><p>E-mail</p></label>
+                    <input class="inputFields" type="email" name="mail" placeholder="Enter your E-mail" required>
+                    <label for="password" class="labelCol labelsInput jost"><p>Password</p></label>
+                    <input class="inputFields" type="password" name="password" placeholder="Enter a password" required>
+                    <div>
+                        <input type="checkbox" name="agree" id="" required>
+                        <label class="labelCol jost">
+                            I agree with <strong><em><a href="https://foundation.wikimedia.org/wiki/Terms_of_Use/en" target="_">Terms</a></em></strong> and <strong><em><a href="https://en.wikipedia.org/wiki/Privacy_law" target="_">Privacy</a></em></strong>
+                        </label>
+                    </div>
+                    <button type="submit" class="signUp jost"><strong>SignUp</strong></button>
+                </form>
+
+                <label class="labelCol jost">
+                    Have an account already?
+                    <a href="./Login.html">
+                        <button class="loginbut jost">Login</button>
+                    </a>
+                </label>
+                
+            </section>
+        </section>
+    </main>
+</body>
+</html>
