@@ -551,26 +551,335 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.absolute {
+  position: absolute;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+.relative {
+  position: relative;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.top-0 {
+  top: 0px;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.mt-lol {
+  margin-top: 6rem;
+}
+
+.mb-bhalf {
+  margin-bottom: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-5\/12 {
+  width: 41.666667%;
+}
+
+.w-7\/12 {
+  width: 58.333333%;
+}
+
+.min-w-full {
+  min-width: 100%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.content-center {
+  align-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.bg-applenav {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.text-xxxtiny {
+  font-size: .6rem;
+}
+
+.text-iconsize {
+  font-size: .9rem;
+}
+
+.text-iconsize1 {
+  font-size: .75rem;
+}
+
+.text-iconsize2 {
+  font-size: 1.1rem;
+}
+
+.text-xltiny {
+  font-size: 4.7rem;
+}
+
+.text-xxtiny {
+  font-size: .7rem;
+}
+
+.text-label {
+  font-size: 2rem;
+}
+
+.text-label1 {
+  font-size: 0.85rem;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
-.underline {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-sky-700 {
+  --tw-text-opacity: 1;
+  color: rgb(3 105 161 / var(--tw-text-opacity));
+}
+
+.text-lime-600 {
+  --tw-text-opacity: 1;
+  color: rgb(101 163 13 / var(--tw-text-opacity));
+}
+
+.hover\:bg-slate-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 530px) {
+  .midmobiles\:mt-lol1 {
+    margin-top: 10rem;
+  }
+}
+
+@media (min-width: 630px) {
+  .midmobiles1\:mt-lol2 {
+    margin-top: 12rem;
+  }
+}
+
+@media (min-width: 730px) {
+  .midmobiles2\:mt-lol3 {
+    margin-top: 16rem;
+  }
+}
+
+@media (min-width: 834px) {
+  .applewebsite\:mt-lol4 {
+    margin-top: 20rem;
+  }
+
+  .applewebsite\:flex {
+    display: flex;
+  }
+
+  .applewebsite\:hidden {
+    display: none;
+  }
+
+  .applewebsite\:text-buttons {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1045px) {
+  .applewebsite2\:mt-lol41 {
+    margin-top: 24rem;
+  }
+
+  .applewebsite2\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .applewebsite3\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1150px) {
+  .applewebsite31\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .applewebsite4\:mt-lol5 {
+    margin-top: 32rem;
+  }
+
+  .applewebsite4\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .applewebsite41\:mt-lol6 {
+    margin-top: 40rem;
+  }
+
+  .applewebsite41\:px-48 {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .applewebsite42\:mt-lol61 {
+    margin-top: 43rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  .applewebsite5\:mt-lol7 {
+    margin-top: 47rem;
+  }
+
+  .applewebsite5\:px-80 {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+
+  .applewebsite5\:text-labelforxxl {
+    font-size: 3rem;
+  }
+
+  .applewebsite5\:text-label12 {
+    font-size: 1.4rem;
+  }
 }

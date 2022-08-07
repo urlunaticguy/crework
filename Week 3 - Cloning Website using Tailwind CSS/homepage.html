@@ -7,10 +7,154 @@
     <title>Week 3</title>
 
     <link href="../dist/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7b3a89c63a.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1 class="text-3xl font-bold px-1 underline">
-        Hello world!
-    </h1>
+<body id="body" class="">
+    <nav class="">
+        <div class=" bg-applenav text-white hidden applewebsite:flex justify-around align-middle items-center content-center px-2 pt-2 pb-3 text-xxxtiny applewebsite2:px-4 applewebsite3:px-12 applewebsite31:px-16 applewebsite4:px-24 applewebsite41:px-48 applewebsite5:px-80">
+            <!-- desktop nav -->
+            <button><i class="fa-brands fa-apple text-iconsize"></i></button>
+            <a class="" href="#">Store</a>
+            <a class="" href="#">Mac</a>
+            <a class="" href="#">iPad</a>
+            <a class="" href="#">iPhone</a>
+            <a class="" href="#">Watch</a>
+            <a class="" href="#">AirPods</a>
+            <a class="" href="#">TV & Home</a>
+            <a class="" href="#">Only on Apple</a>
+            <a class="" href="#">Accessories</a>
+            <a class="" href="#">Support</a>
+            <button><i class="fa-solid fa-magnifying-glass text-iconsize1"></i></button>
+            <button><i class="fa-solid fa-bag-shopping text-iconsize1"></i></button>
+        </div>
+        <div id="mobilenav" class="bg-applenav text-white flex justify-between px-3 py-2 applewebsite:hidden">
+            <!-- mobile nav -->
+            <button><i id="hamburger" class="fa-solid fa-bars"></i></button>
+            <button><i class="fa-brands fa-apple text-iconsize2"></i></button>
+            <button><i class="fa-solid fa-bag-shopping text-iconsize"></i></button>
+        </div>
+        <div id="mobileMenu" class="hidden min-w-full min-h-screen bg-black text-white">
+            <!-- mobile nav menu items goes here -->
+            <ul class="flex flex-col gap-2 px-8 py-2">
+                <li><a href="">Store</a></li>
+                <li><a href="">Mac</a></li>
+                <li><a href="">iPad</a></li>
+                <li><a href="">iPhone</a></li>
+                <li><a href="">Watch</a></li>
+                <li><a href="">AirPods</a></li>
+                <li><a href="">TV & Home</a></li>
+                <li><a href="">Only on Apple</a></li>
+                <li><a href="">Accessories</a></li>
+                <li><a href="">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="luck-video" class="flex flex-col min-w-full">
+        <div class="">
+            <video id="loopedVideo" class="min-w-full absolute" autoplay muted loop>
+                <source class="" src="./videos/loopVideo.mp4" type="video/mp4">
+            </video>
+            <div class="relative top-0">
+                <div class="flex flex-col text-white justify-center align-middle">
+                    <a class="flex justify-center align-middle" href="">
+                        <h1 class="text-xltiny font-serif">LUCK</h1>
+                    </a>
+                    <div class="flex justify-center align-middle">
+                        <button class="w-32 bg-white text-black px-2 py-1 text-xxtiny rounded-full font-bold hover:bg-slate-200">
+                            <span>Streaming now</span>
+                            <i class="fa-solid fa-circle-play"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-10 mt-lol mb-bhalf midmobiles:mt-lol1 midmobiles1:mt-lol2 midmobiles2:mt-lol3 applewebsite:mt-lol4 applewebsite2:mt-lol41 applewebsite4:mt-lol5 applewebsite41:mt-lol6 applewebsite42:mt-lol61 applewebsite5:mt-lol7">
+            <!-- ipad pro starts here -->
+            <div class="flex flex-col justify-center align-middle text-center">
+                <div class="font-semibold text-label applewebsite5:text-labelforxxl"><h2>iPad Pro</h2></div>
+                <div class="applewebsite5:text-label12"><h3>The ultimate☘️iPad experience☘️</h3></div>
+                <div class="flex gap-10 text-label1 py-2 justify-center align-middle text-center applewebsite:text-buttons">
+                    <button class="text-sky-700">
+                        <span>Learn more  <i class="fa-solid fa-greater-than text-xxxtiny"></i></span>
+                    </button>
+                    <button class="text-sky-700">
+                        <span>Buy  <i class="fa-solid fa-greater-than text-xxxtiny"></i></span>
+                    </button>
+                </div>
+                <div class="flex justify-center">
+                    <img class="w-5/12" src="./images/ipadPro.png" alt="">
+                </div>
+            </div>
+            <!-- iphone 13 starts here -->
+            <div class="flex flex-col justify-center align-middle text-center">
+                <div class="font-semibold text-label applewebsite5:text-labelforxxl"><h2>iPhone <span class="text-lime-600">13</span></h2></div>
+                <div class="applewebsite5:text-label12"><h3>Your new superpower.</h3></div>
+                <div class="flex gap-10 text-label1 py-2 justify-center align-middle text-center applewebsite:text-buttons">
+                    <button class="text-sky-700">
+                        <span>Learn more <i class="fa-solid fa-greater-than text-xxxtiny"></i></span>
+                    </button>
+                    <button class="text-sky-700">
+                        <span>Buy  <i class="fa-solid fa-greater-than text-xxxtiny"></i></span>
+                    </button>
+                </div>
+                <div class="flex justify-center">
+                    <img class="w-7/12" src="./images/iphone13.png" alt="">
+                </div>
+            </div>
+            <!-- macbook starts here -->
+            <div class="flex flex-col justify-center align-middle text-center">
+                <div class="font-semibold text-label applewebsite5:text-labelforxxl"><h2>Macbook Air</h2></div>
+                <div class="applewebsite5:text-label12"><h3>Don't take it lightly.</h3></div>
+                <div class="flex gap-10 text-label1 py-2 justify-center align-middle text-center applewebsite:text-buttons">
+                    <button class="text-sky-700">
+                        <span>Learn more <i class="fa-solid fa-greater-than text-xxxtiny"></i></span>
+                    </button>
+                    <button class="text-sky-700">
+                        <span>Buy  <i class="fa-solid fa-greater-than text-xxxtiny"></i></span>
+                    </button>
+                </div>
+                <div class="flex justify-center">
+                    <img class="w-7/12" src="./images/macbookair.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <video id="fullvideo" class="min-w-full absolute" autoplay muted loop>
+                <source class="" src="./videos/fullVideo.mp4" type="video/mp4">
+            </video>
+            <div class="relative top-10">
+                <div class="flex flex-col text-white justify-center align-middle items-center">
+                    <a class="flex justify-center align-middle" href="">
+                        <h1 class="text-xltiny font-serif">LUCK</h1>
+                    </a>
+                    <div class="flex justify-center align-middle">
+                        <button class="w-32 bg-white text-black px-2 py-1 text-xxtiny rounded-full font-bold hover:bg-slate-200">
+                            <span>Streaming now</span>
+                            <i class="fa-solid fa-circle-play"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="ipad-pro" class="min-w-full">
+        <img src="./images/ipadPro.png" alt="">
+    </div> -->
+
+    <script>
+        const mainBody = document.querySelector("#body")
+        const btn = document.querySelector("#hamburger")
+        const menu = document.querySelector("#mobileMenu")
+        const mobilenav = document.querySelector("#mobilenav")
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden")
+            mobilenav.classList.toggle("bg-black")
+            mainBody.classList.toggle("overflow-hidden") //stops scrolling when navbar is clicked
+        })
+    </script>
 </body>
 </html>
