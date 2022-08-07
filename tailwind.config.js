@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}",
-            "./Week 3 - Cloning Website using Tailwind CSS/**/*.{html,js}",
-            "./Week 0/**/*.{html,js}"],
+            "./Week 3 - Cloning Website using Tailwind CSS/**/*.{html,js}"],
   theme: {
     extend: {
       colors: {
