@@ -625,6 +625,10 @@ video {
   min-width: 100%;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .flex-col {
   flex-direction: column;
 }
