@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4</title>
+
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7b3a89c63a.js" crossorigin="anonymous"></script>
+</head>
+<body id="primary" class="flex justify-center w-[100%] bg-gradient-to-r from-[#FF9933] via-white to-[#138808]">
+    <main id="lil" class="flex flex-col justify-center text-center align-middle w-[100%]">
+        <div class="flex justify-end h-[22vh]">
+            <span id="login-alert" class="animate-fadeinout hidden h-[2rem] mt-[1.8rem] mr-[0.5rem] px-[1rem] py-[0.25rem] bg-indianflagblue bg-opacity-60 text-white rounded-full">
+            </span>
+        </div>
+        <!-- login/signup div goes here -->
+        <div id="options-div" class="flex flex-col gap-4 text-center">
+            <div>
+                <h1 class="text-[1.8rem] font-semibold">Happy Independence Day.</h1>
+                <div class="flex justify-center align-middle text-center items-center">
+                    <h4 class="text-[1.2rem] pb-[0.2rem] font-semibold">75</h4>
+                    <h4 class="text-[0.8rem] pl-[0.3rem]">years of progress as a nation.</h4>
+                </div>
+            </div>
+            <div id="go-for-signup">
+                <button id="home-signup-button" onclick="hide(1); return false;" class="bg-[#FF9933] text-white hover:bg-indianflagblue rounded-full px-2 py-1 w-[7rem]">
+                    <a class="font-light" href="">SignUp</a>
+                </button>
+            </div>
+            <div id="go-for-login">
+                <button id="home-login-button" onclick="hide(0); return false;" class="bg-[#138808] text-white hover:bg-indianflagblue rounded-full px-2 py-1 w-[7rem]">
+                    <a class="font-light" href="">Login</a>
+                </button>
+            </div>
+            <!-- hidden sign up goes here -->
+            <div id="signup" class="animate-fadeinout flex-hidden hidden justify-start text-start px-[14vw] midmobiles2:px-[20vw] applewebsite2:px-[30vw] applewebsite4:px-[35vw] applewebsite5:px-[38vw]">
+                <form class="flex flex-col justify-center" action="">
+                    <div class="flex flex-col py-2">
+                        <label class="t-cs3 ml-[0.5rem] text-indianflagblue font-bold" for="">First Name</label>
+                        <input id="signup-first-name" class="bg-[#FF9933] border-[0.2rem] border-indianflagblue br-cs3 text-white rounded-full px-[0.5rem]" type="text" required autofocus>
+                    </div>
+                    <div class="flex flex-col py-2">
+                        <label class="t-cs3 ml-[0.5rem] text-indianflagblue font-bold" for="">Last Name</label>
+                        <input id="signup-last-name" class="bg-[#FF9933] border-[0.2rem] border-indianflagblue br-cs3 text-white rounded-full px-[0.5rem]" type="text" required>
+                    </div>
+                    <div class="flex flex-col pt-1.5">
+                        <div class="min-w-full flex text-center items-center align-middle">
+                            <label class="t-cs3 ml-[0.5rem] text-indianflagblue font-bold" for="">Email</label>
+                        </div>
+                        <input id="email-signup" class="bg-[#138808] border-[0.2rem] border-indianflagblue br-cs3 text-white rounded-full px-[0.5rem]" type="email" required>
+                        <span id="signup-mail-error" class="ml-[0.5rem] mt-[0.15rem] text-[0.7rem] font-bold text-red-700">&nbsp;</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="min-w-full flex flex-col">
+                            <label id="signup-password-label" class="ml-[0.5rem] text-indianflagblue t-cs3 font-bold" for="">Password</label>
+                        </div>
+                        <div class="min-w-full">
+                            <input id="signuppass" class="bg-[#138808] border-[0.2rem] border-indianflagblue br-cs3 text-white rounded-full pl-[0.5rem] pr-[2em] w-[100%]" type="password" required>
+                            <i id="signupshow-pass" class="fa-solid text-white absolute ml-[-1.6em] mt-[0.45em] fa-eye hover:cursor-pointer"></i>
+                        </div>
+                        <span id="pass-status-msg" class="ml-[0.5rem] mt-[0.15rem] mb-[0.1rem] text-[0.7rem] font-bold">&nbsp;</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <input class="ml-[0.5rem]" type="checkbox" name="" id="terms-conditions" required>
+                        <label class="text-[0.75rem]" for="terms-conditions">
+                            I accept the <strong>Terms</strong> & <strong>Conditions</strong>.
+                        </label>
+                    </div>
+                    <div class="flex flex-col">
+                        <button id="submit-button" class="bgc3 hidden bg-indianflagblue text-white rounded-full ml-[20%] w-[60%]" type="submit">
+                            SignUp
+                        </button>
+                    </div>
+                </form>
+                <!-- fake signup button goes here -->
+                <div class="flex flex-col py-1.5">
+                    <button id="pseudo-signup-button" class="bgc3 bg-indianflagblue text-white rounded-full ml-[28%] w-[44%] py-1">
+                        SignUp
+                    </button>
+                </div>
+            </div>
+            <!-- hidden login goes here -->
+            <div id="login" class="animate-fadeinout flex-hidden hidden justify-start text-start px-[14vw] midmobiles2:px-[20vw] applewebsite2:px-[30vw] applewebsite4:px-[35vw] applewebsite5:px-[38vw]">
+                <form id="login-form" onsubmit="" class="flex flex-col justify-center" action="">
+                    <div class="flex flex-col pt-1.5">
+                        <div class="min-w-full flex text-center items-center align-middle">
+                            <label class="ml-[0.5rem] text-indianflagblue t-cs3 font-bold" for="">Email</label>
+                        </div>
+                        <input id="login-mail" class="bg-[#FF9933] border-[0.2rem] border-indianflagblue br-cs3 text-white if-cs rounded-full px-[0.5rem]" type="email" autofocus required>
+                        <span id="login-mail-error" class="ml-[0.5rem] text-[0.7rem] font-bold text-red-700">&nbsp;</span>
+                    </div>
+                    <div class="flex flex-col pt-1.5">
+                        <label class="ml-[0.5rem] text-indianflagblue t-cs3 font-bold" for="">Password</label>
+                        <div class="min-w-full">
+                            <input id="loginpass" class="bg-[#138808] border-[0.2rem] border-indianflagblue br-cs3 text-white if-cs rounded-full pl-[0.5rem] pr-[2em] w-[100%]" type="password" required>
+                            <i id="loginshow-pass" class="fa-solid text-white absolute ml-[-1.6em] mt-[0.45em] fa-eye hover:cursor-pointer"></i>
+                        </div>
+                        <div class="flex text-[0.8rem] justify-between mt-[0.5rem]">
+                            <div class="ml-[0.5rem] flex justify-center items-center align-middle ">
+                                <input class="mr-[0.2rem] cursor-pointer" type="checkbox" name="" id="">
+                                <label class="text-indianflagblue t-cs3 cursor-pointer text-[0.7rem]" for="">Remember Me?</label>
+                            </div>
+                            <a class="text-indianflagblue t-cs3 text-[0.7rem]" href="">Forgot Password?</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <button id="login-button" onclick="" class="hidden bgc3 bg-indianflagblue text-white rounded-full ml-[28%] w-[44%] py-1" type="submit">
+                            Login
+                        </button>
+                    </div>
+                </form>
+                <!-- fake login button goes here -->
+                <div class="flex flex-col py-1.5">
+                    <button id="pseudo-login-button" class="bg-indianflagblue text-white rounded-full ml-[28%] w-[44%] py-1 bgc3">
+                        Login
+                    </button>
+                </div>
+                <div class="flex flex-col justify-center align-middle items-center text-center mt-[0.8rem] gap-3">
+                    <button class="hover:bg-gray-200 px-[0.4rem] py-[0.3rem] bg-white border-[0.1rem] border-black rounded-full flex justify-center text-center max-w-[12rem]">
+                        <span class="text-[0.7rem]">Sign in with Google</span>
+                        <img class="mt-[-0.1rem]" src="../Week 1 - Login Signup using HTML/images/google_icon.png" width="25rem" height="25rem" alt="">
+                    </button>
+                    <button class="hover:bg-gray-200 px-[0.4rem] py-[0.3rem] bg-white border-[0.1rem] border-black rounded-full flex justify-center text-center max-w-[12rem]">
+                        <span class="text-[0.7rem]">Sign in with Apple</span>
+                        <svg class="w-[0.9rem] mt-[-0.2rem] ml-[0.2rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+                        </svg>
+                    </button>
+                    <button class="px-[0.4rem] py-[0.3rem] bg-white border-[0.1rem] border-black rounded-full flex justify-center text-center max-w-[12rem] hover:bg-gray-200">
+                        <span class="text-[0.7rem]">Sign in with Github</span>
+                        <svg class="w-[0.9rem] mt-[0rem] ml-[0.2rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center px-[14vw] midmobiles2:px-[20vw] applewebsite2:px-[30vw] applewebsite4:px-[35vw] applewebsite5:px-[38vw]">
+                <span class="text-[0.9rem]">
+                    Customise your colors
+                </span>
+                <div class="flex justify-center gap-3 mt-[0.4rem]">
+                    <div class="flex flex-col">
+                        <button onclick="changeCol(0)" class="rounded-full border-black border-[0.1rem] bg-gradient-to-r from-[#00ADB5] via-white to-[#505762] w-[1.8rem]">
+                            <span>&nbsp;</span>
+                        </button>
+                        <span>teal</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <button onclick="changeCol(1)" class="col-1 rounded-full border-black border-[0.1rem] bg-gradient-to-r from-[#FF9933] via-white to-[#138808] w-[1.8rem]">
+                            <span>&nbsp;</span>
+                        </button>
+                        <span>India</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <button onclick="changeCol(2)" class="col-1 rounded-full border-black border-[0.1rem] bg-gradient-to-r from-[#B83B5E] via-white to-[#6A2C70] w-[1.8rem]">
+                            <span>&nbsp;</span>
+                        </button>
+                        <span>Pink</span>
+                    </div>
+                    <div class="flex flex-col justify-center text-center align-middle items-center">
+                        <button onclick="changeCol(3)" class="col-1 rounded-full border-black border-[0.1rem] bg-gradient-to-r from-[#5800FF] via-white to-[#654b34] w-[1.8rem]">
+                            <span>&nbsp;</span>
+                        </button>
+                        <span>Auto</span>
+                    </div>
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- picture goes here -->
+    </main>
+
+    <script src="./week4script.js"></script>
+</body>
+</html>
