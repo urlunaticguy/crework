@@ -83,19 +83,25 @@ function changeCol(nn) {
     }
     for (i=0;i<color1.length;i++) {
         color1[i].style.backgroundColor = colors[n][0];
+        color1[i].style.transition = "ease 300ms";
     }
     for (j=0;j<color2.length;j++) {
         color2[j].style.backgroundColor = colors[n][1];
+        color2[j].style.transition = "ease 300ms";
     }
     for (k=0;k<color3bg.length;k++) {
         color3bg[k].style.backgroundColor = colors[n][2];
+        color3bg[k].style.transition = "ease 300ms";
     }
     for (k=0;k<color3text.length;k++) {
         color3text[k].style.color = colors[n][2];
+        color3text[k].style.transition = "ease 300ms";
     }
     for (l=0;l<color3border.length;l++) {
         color3border[l].style.borderColor = colors[n][2];
+        color3border[l].style.transition = "ease 300ms";
     }
+    //couldnt transition the background gradient
     body.classList.remove(currentGradientColor[0]);
     body.classList.remove(currentGradientColor[1]);
     body.classList.add(gradientColors[n][0]);
