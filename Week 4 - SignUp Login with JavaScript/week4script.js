@@ -21,7 +21,6 @@ const falseSubmitBut = document.querySelector("#pseudo-signup-button");
 const loginMailErrMsg = document.querySelector("#login-mail-error");
 const signupMailErrMsg = document.querySelector("#signup-mail-error");
 const inputEmailSignUp = document.querySelector("#email-signup");
-const loginPassWarning = document.querySelector("#login-pass-warning");
 const signupFirstNameInput = document.querySelector("#signup-first-name");
 const signupLastNameInput = document.querySelector("#signup-last-name");
 const termsCondiCheckbox = document.querySelector("#terms-conditions");
@@ -197,15 +196,9 @@ falseLoginBut.addEventListener('click', () => {
     }
 })
 
-inputFieldPass.onkeydown = function(e) {
-    loginPassWarning.innerHTML = "&nbsp";
-}
-
 inputLoginMail.onkeydown = function(e) {
     loginMailErrMsg.innerHTML = "&nbsp";
 }
-
-
 
 //hide the starting signup login and show what got clicked
 function hide(d) {
