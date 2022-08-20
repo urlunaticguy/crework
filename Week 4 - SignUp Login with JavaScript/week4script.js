@@ -70,7 +70,7 @@ function changeCol(nn) {
     var n = 0;
     n = nn;
     while (nn > 2) {
-        n = Math.floor((Math.random() * colors.length));
+        n = Math.floor((Math.random() * colors.length)); //0 to 7
         if (n <= 2) {
             n = n + 3;
         }
