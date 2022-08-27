@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- linking TailwindCSS -->
+    <link rel="stylesheet" href="../dist/output.css">
+    
+    <!-- linking jQuery -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <main class="w-[100%] min-h-[90vh] pt-[1vh] flex flex-col justify-center items-center">
+        <!-- heading div here -->
+        <header class="w-[90%] h-[10vh] text-black">
+            <h1 class="text-[2.5rem]">
+                To-Do
+            </h1>
+        </header>
+
+        <!-- upcoming tasks div here -->
+        <div id="" class="w-[90%] h-[70vh] px-[0.8rem] bg-[#262626] text-white rounded-lg overflow-y-scroll">
+            
+            <!-- chevron and header -->
+            <h3 class="text-[1rem] mt-[0.5rem] flex">
+                <div id="upcoming-tasks-chevron" class="pt-[0.2rem]">
+                    <svg id="upcoming-chevron-down" xmlns="http://www.w3.org/2000/svg" class="w-[0.7rem] pt-[0.2rem] fill-white" viewBox="0 0 448 512">
+                        <path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/>
+                    </svg>
+                    <svg id="upcoming-chevron-right" xmlns="http://www.w3.org/2000/svg" class="w-[0.7rem] fill-white hidden" viewBox="0 0 320 512">
+                        <path d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z"/>
+                    </svg>
+                </div>
+                <span class="pl-[0.5rem]">
+                    Upcoming Tasks
+                </span>
+            </h3>
+
+            <!-- upcoming tasks -->
+            <div id="upcoming-tasks-list" class="my-[0.5rem] flex flex-col">
+                <table>
+                    <tr>
+                        <td>hey</td>
+                    </tr>
+                </table>
+                <!-- <div class="flex items-center pb-[0.5rem]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="border-[0.15rem] border-[#b3b3b3] rounded-full w-[0.9rem] h-[0.9rem]" viewBox="0 0 512 512">
+                        <path d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"/>
+                    </svg>
+                    <h2 class="text-[1.2rem] px-[0.5rem] font-light">
+                        Bring vegetables and eggs.
+                    </h2>
+                </div> -->
+            </div>
+            
+            <!-- completed tasks div here -->
+            <h3 class="text-[1rem] mt-[0.5rem] flex">
+                <div id="completed-tasks-chevron" class="pt-[0.2rem]">
+                    <svg id="completed-chevron-down" xmlns="http://www.w3.org/2000/svg" class="w-[0.7rem] pt-[0.2rem] fill-white" viewBox="0 0 448 512">
+                        <path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/>
+                    </svg>
+                    <svg id="completed-chevron-right" xmlns="http://www.w3.org/2000/svg" class="w-[0.7rem] fill-white hidden" viewBox="0 0 320 512">
+                        <path d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z"/>
+                    </svg>
+                </div>
+                <span class="pl-[0.5rem]">
+                    Completed Tasks
+                </span>
+            </h3>
+        </div>
+
+        <!-- add a task div button here -->
+        <div id="add-task-btn" class="bg-blue-500 fixed mt-[93vh] w-[90%] h-[9vh] p-[1rem] rounded-lg cursor-pointer">
+            <button class="text-white text-[1.2rem] w-[100%] min-h-full flex items-center justify-start align-middle">
+                <svg id="plus-svg" xmlns="http://www.w3.org/2000/svg" class="fill-white w-[1.5rem]" viewBox="0 0 448 512">
+                    <path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/>
+                </svg>
+                <span id="main-span" class="ml-[0.5rem] font-light">
+                    Add a Task
+                </span>
+            </button>
+        </div>
+
+        <!-- new task add div -->
+        <div id="add-task-details" class="hidden bg-orange-500 fixed mt-[64vh] w-[90%] h-[20vh] p-[1rem] rounded-lg">
+            <textarea id="task-text" class="w-[100%] h-[100%]" name="" id=""></textarea>
+        </div>
+    </main>
+
+
+    <script src="./todo.js"></script>
+</body>
+</html>

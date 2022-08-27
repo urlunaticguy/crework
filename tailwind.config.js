@@ -4,7 +4,8 @@ module.exports = {
             "./Week 3 - Cloning Website using Tailwind CSS/**/*.{html,js}",
             "./*.{html,js}",
             "./Week 4 - SignUp Login with JavaScript/**/*.{html,js}",
-            "./Week 5/**/*.{html,js}"],
+            "./Week 5/**/*.{html,js}",
+            "./Week 6 - ToDo/**/*.{html,js}"],
   theme: {
     extend: {
       animation: {

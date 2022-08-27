@@ -55,14 +55,11 @@ gradientButton.addEventListener("click", function() {
     updateColorDetails(("rgb("+r+", "+g+", "+b+"), rgb("+r1+", "+g1+", "+b1+") "), 1);
 });
 
+//update what color has been generated
 function updateColorDetails(col, t = 0) {
-    colorNameLabel.classList.add("border-white");
-    colorNameLabel.classList.add("hover:bg-yellow-600");
     colorNameLabel.innerHTML = col;
-    colorNameLabel.classList.remove("bg-gray-200");
-    colorNameLabel.classList.add("bg-yellow-500");
-    colorNameLabel.classList.remove("w-[20rem]");
-    colorNameLabel.classList.add("w-[15rem]");
+    colorNameLabel.classList.add("border-white", "hover:bg-yellow-600", "bg-yellow-500", "w-[15rem]");
+    colorNameLabel.classList.remove("bg-gray-200", "w-[20rem]");
     if (t != 0) { 
         // if gradient is clicked
         colorNameLabel.classList.remove("w-[15rem]");

@@ -100,11 +100,9 @@ function changeCol(nn) {
         color3border[l].style.borderColor = colors[n][2];
         color3border[l].style.transition = "ease 300ms";
     }
-    //couldnt transition the background gradient
-    body.classList.remove(currentGradientColor[0]);
-    body.classList.remove(currentGradientColor[1]);
-    body.classList.add(gradientColors[n][0]);
-    body.classList.add(gradientColors[n][1]);
+    //couldnt transition the background gradient :(
+    body.classList.remove(currentGradientColor[0], currentGradientColor[1]);
+    body.classList.add(gradientColors[n][0], gradientColors[n][1]);
     currentGradientColor[0] = gradientColors[n][0];
     currentGradientColor[1] = gradientColors[n][1];
 }
