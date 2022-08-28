@@ -80,31 +80,38 @@ function makeTaskCompleted(qq) {
 }
 
 function saveTask() {
-    console.log("task saved");
-    if (timerOpened == false) {
-        timerMins = 0;
-    }
-    timerOpened = false;
-    let totalTime = 0;
-    totalTime = (timerMins * 60);
-    let showTime = totalTime + 's';
-    if (totalTime == 0) {
-        totalTime = -1;
-        showTime = '';
-    }
-    console.log("CHECK THIS TIME ", totalTime);
     let inputTaskText = $(".entered-list").val();
     let taskDesc = $(".description-input").val();
-    $(".entered-list").val("");
-    $(".description-input").val("");
-    console.log(inputTaskText);
-    $("#upcoming-tasks").prepend(taskHTML1 + upcomingArr.length + taskHTML11 + inputTaskText + taskHTML2 + taskDesc + taskHTML201 + showTime + taskHTML202 + upcomingArr.length + taskHTML21);
-    upcomingArr.push(inputTaskText);
-    upcoDesc.push(taskDesc);
-    timeArr.push(totalTime.toString());
-    localStorage.setItem("upcoming-tasks", JSON.stringify(upcomingArr));
-    localStorage.setItem("upcoming-tasks-desc", JSON.stringify(upcoDesc));
-    localStorage.setItem("time", JSON.stringify(timeArr));
+    if ((inputTaskText === '') && (taskDesc === '')) {
+        alert("Both fields cannot be empty.");
+    }
+    else {
+        console.log("task saved");
+        if (timerOpened == false) {
+            timerMins = 0;
+        }
+        timerOpened = false;
+        let totalTime = 0;
+        totalTime = (timerMins * 60);
+        let showTime = totalTime + 's';
+        if (totalTime == 0) {
+            totalTime = -1;
+            showTime = '';
+        }
+        console.log("CHECK THIS TIME ", totalTime);
+        
+        $(".entered-list").val("");
+        $(".description-input").val("");
+        console.log(inputTaskText);
+        $("#upcoming-tasks").prepend(taskHTML1 + upcomingArr.length + taskHTML11 + inputTaskText + taskHTML2 + taskDesc + taskHTML201 + showTime + taskHTML202 + upcomingArr.length + taskHTML21);
+        upcomingArr.push(inputTaskText);
+        upcoDesc.push(taskDesc);
+        timeArr.push(totalTime.toString());
+        localStorage.setItem("upcoming-tasks", JSON.stringify(upcomingArr));
+        localStorage.setItem("upcoming-tasks-desc", JSON.stringify(upcoDesc));
+        localStorage.setItem("time", JSON.stringify(timeArr));
+    }
+    
 }
 
 function updateUpcomingTasks() { 
