@@ -100,9 +100,7 @@ body {
   margin-top: 0.3rem;
 }
 
-.hidden {
-  display: none;
-}
+.hidden { display: none;}
 
 .tasks {
   width: 100%;
