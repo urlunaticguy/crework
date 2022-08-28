@@ -20,39 +20,36 @@
     <div class="todo-list">
       <div class="tasks">
         <div class="list-head">
-            <a class="hidden" href=""></a>
             <div class="input-and-save-div">
-                <input type="text" class="entered-list" placeholder="Create a Task..." />
-                <button class="save-btn" onclick="saveTask()">Add task</button>
+                <input type="text" class="entered-list" placeholder="Task Title..." />
+                <button class="timer-btn"><i class="fa-solid fa-clock fa-xl"></i></button>
+                <button class="save-btn" onclick="saveTask()"><i class="fa-solid fa-plus fa-xl"></i></button>
             </div>
-          <div class="sub-heading">
-            <h4 style="font-weight: 300">
-                Upcoming Tasks
-            </h4>
-          </div>
-          
+            <input type="text" class="description-input" name="" id="" placeholder="Task Description...">
           <table>
             <tr id="upcoming-tasks" class="flex-tasks">
-                <!-- empty -->
-                <td>
-                    some data
-                </td>
-            </tr>
-          </table>
-
-          <div class="sub-heading">
-            <h4 style="font-weight: 300">
-                Completed Tasks
-            </h4>
-            <i class="fa-solid fa-clock-rotate-left"></i>
-          </div>
-          
-          <table>
-            <tr id="completed-tasks" class="flex-tasks">
-                <!-- empty -->
             </tr>
           </table>
         </div>
+      </div>
+    </div>
+
+    <div id="timer-modal" class="modal hidden">
+      <div>
+        <form action="" class="flex-tasks jc" id="formid">
+          <div>
+            <label for="mins">Minutes (between 0 and 59):</label>
+            <input type="number" name="mins" id="mins" min="0" max="59">
+          </div>
+          <div>
+            <button id="timer-submit" class="modal-btn" type="submit">
+              Add Timer
+            </button>
+            <button class="modal-btn">
+              Cancel
+            </button>
+          </div>
+        </form>
       </div>
     </div>
 
