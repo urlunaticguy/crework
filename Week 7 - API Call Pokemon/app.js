@@ -2,10 +2,10 @@ let pokemonID1 = Math.floor(Math.random() * 898) + 1; //1 to 905 pokemon IDs on 
 let pokemonID2 = Math.floor(Math.random() * 898) + 1; //1 to 898 pokemon images 
 let pokemonData = ['',''];
 
-const pokeDivs = [$("#pokeimg1"), $("#pokeimg2")];
-const mainDiv = document.querySelector("#main");
-const winner = $("#winner"), button = $("#button");
-let totalStat = 0, totalArr = [0, 0], colorInd = [0, 0];
+const pokeDivs = [$("#img1"), $("#img2")], infoDivs = [$("#info1"), $("#info2")]
+const mainDiv = document.querySelector("#main")
+const winner = $("#winner"), button = $("#button")
+let totalStat = 0, totalArr = [0, 0], colorInd = [0, 0]
 
 async function pokemonCall(url, pokemonNo) {
     try {
@@ -13,6 +13,10 @@ async function pokemonCall(url, pokemonNo) {
         pokemonData[pokemonNo] = res.data;
         console.log(res.data);
         console.log("Pokemon called - No errors")
+        colorSet(pokemonData)
+        pokeDivs[pokemonNo].append(`<img style='background-color: ${pokeColors[colorInd[pokemonNo]]};' loading='lazy' class="object-contain p-1 h-[100%] w-[100%] border-t-2 border-l-2 border-r-2" src='${pokemonData[pokemonNo].sprites.other.home.front_default}'/><h1 style='background-color: ${pokeColors[colorInd[pokemonNo]]};' class='pt-1 text-[0.9rem] text-black midmobiles:text-[1.6rem] font-light border-t-[0.2rem] border-l-2 border-r-2 border-t-white'>${pokemonData[pokemonNo].name.toUpperCase()}</h1>`)
+        setPokemonType(pokemonData[pokemonNo], pokemonNo)
+        pokemonStatsCount(pokemonData[pokemonNo], pokemonNo)
     } catch(err) {
         console.error(err)
     }
@@ -29,7 +33,7 @@ async function pokemonStatsCount(data, n) {
     let speed = pokemonStats[5].base_stat
     totalStat = hp + attack + defense + specialAttack + specialDefense + speed
     totalArr[n] = totalStat
-    pokeDivs[n].append(`<div style='background-color: ${pokeColors[colorInd[n]]};' class='px-[1rem] pt-[0.5rem] pb-[1rem] flex flex-col justify-center text-center align-middle items-center text-black font-semibold border-r-2 border-l-2 border-b-2'>
+    infoDivs[n].append(`<div style='background-color: ${pokeColors[colorInd[n]]};' class='px-[1rem] pt-[0.5rem] pb-[1rem] flex flex-col justify-center text-center align-middle items-center text-black font-semibold border-r-2 border-l-2 border-b-2'>
                             <h3 class='w-[100%] font-bold text-[1.5rem]'>${totalStat}</h3>
                             <div class='pt-[0.2rem] w-[100%] flex justify-between'><h4>HP</h4><h4>${hp}</h4></div>
                             <div class='pt-[0.2rem] w-[100%] flex justify-between'><h4>Attack</h4><h4>${attack}</h4></div>
@@ -61,41 +65,32 @@ async function main() {
     try {
         await pokemonCall(`https://pokeapi.co/api/v2/pokemon/${pokemonID1}/`, 0)
         await pokemonCall(`https://pokeapi.co/api/v2/pokemon/${pokemonID2}/`, 1)
+        console.log()
     } catch(e) {
         console.error(e)
     } finally {
         console.log("Pokemon 1 - ",pokemonData[0].name)
         console.log("Pokemon 2 - ",pokemonData[1].name)
-        colorSet(pokemonData)
-        pokeDivs[0].append(`<img style='background-color: ${pokeColors[colorInd[0]]};' class="object-contain p-1 h-[30%] border-t-2 border-l-2 border-r-2" src='${pokemonData[0].sprites.other.home.front_default}'/><h1 style='background-color: ${pokeColors[colorInd[0]]};' class='pt-1 text-[0.9rem] text-black midmobiles:text-[1.6rem] font-light border-t-[0.2rem] border-l-2 border-r-2 border-t-white'>${pokemonData[0].name.toUpperCase()}</h1>`)
-        setPokemonType(pokemonData[0], 0)
-        pokeDivs[1].append(`<img style='background-color: ${pokeColors[colorInd[1]]};' class="object-contain p-1 h-[30%] border-t-2 border-l-2 border-r-2" src='${pokemonData[1].sprites.other.home.front_default}'/><h1 style='background-color: ${pokeColors[colorInd[1]]};' class='pt-1 text-[0.9rem] text-black midmobiles:text-[1.6rem] font-light border-t-[0.2rem] border-l-2 border-r-2 border-t-white'>${pokemonData[1].name.toUpperCase()}</h1>`)
-        setPokemonType(pokemonData[1], 1)
-        pokemonStatsCount(pokemonData[0], 0)
-        pokemonStatsCount(pokemonData[1], 1)
         mainDiv.classList.add("flex","justify-center");
-        setTimeout(() => {
-            mainDiv.classList.toggle("hidden")
-            button.removeClass("hidden")
-            button.addClass("flex")
-            $("body").css("background-image", `linear-gradient(to right, ${pokeColors[colorInd[1]]} , ${pokeColors[colorInd[0]]})`)
-        }, 1500); //1500ms time for the loading of images
-        setTimeout(() => {
-            winner.empty();
-            if (totalArr[0] === totalArr[1]) {
-                winner.append(`<span class='text-[1.8rem]'>Duel Tied</span>`);
-            } else {
-                let z = Math.max(...totalArr)
-                let i = totalArr.indexOf(z)
-                winner.append(`<span class='text-[1.8rem] p-4 rounded-[2rem] bg-black text-white'>Trainer ${i+1} WON</span>`);
-            }
-        }, 2500);
+        mainDiv.classList.toggle("hidden")
+        button.removeClass("hidden")
+        button.addClass("flex")
+        $("body").css("background-image", `linear-gradient(to right, ${pokeColors[colorInd[1]]} , ${pokeColors[colorInd[0]]})`)
+        winner.empty();
+        if (totalArr[0] === totalArr[1]) {
+            winner.append(`<span class='text-[1.8rem] p-4 rounded-[2rem] bg-black text-white'>Duel Tied</span>`);
+        } else {
+            let z = Math.max(...totalArr)
+            let i = totalArr.indexOf(z)
+            winner.append(`<span class='text-[1.8rem] p-4 rounded-[2rem] bg-black text-white'>Trainer ${i+1} WON</span>`);
+        }
     }
 }
 
 $("#duel-btn").on("click", () => {
     pokemonData = ['', '']; colorInd = [0, 0]; totalArr = [0, 0]
     pokeDivs[0].empty(); pokeDivs[1].empty();
+    infoDivs[0].empty(); infoDivs[1].empty();
     mainDiv.classList.toggle("hidden")
     button.toggleClass("hidden")
     pokemonID1 = Math.floor(Math.random() * 898) + 1

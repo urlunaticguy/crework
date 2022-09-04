@@ -571,6 +571,10 @@ video {
   top: 2.5rem;
 }
 
+.-z-\[1\] {
+  z-index: -1;
+}
+
 .my-\[0\.5rem\] {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -696,6 +700,58 @@ video {
   margin-top: 2%;
 }
 
+.mt-\[10rem\] {
+  margin-top: 10rem;
+}
+
+.mt-\[5rem\] {
+  margin-top: 5rem;
+}
+
+.mt-\[5\.5rem\] {
+  margin-top: 5.5rem;
+}
+
+.mb-\[5rem\] {
+  margin-bottom: 5rem;
+}
+
+.mb-\[5\.1rem\] {
+  margin-bottom: 5.1rem;
+}
+
+.mb-\[5\.2rem\] {
+  margin-bottom: 5.2rem;
+}
+
+.mb-\[5\.3rem\] {
+  margin-bottom: 5.3rem;
+}
+
+.mb-\[2rem\] {
+  margin-bottom: 2rem;
+}
+
+.mb-\[3rem\] {
+  margin-bottom: 3rem;
+}
+
+.mb-\[4rem\] {
+  margin-bottom: 4rem;
+}
+
+.mb-\[4\.2rem\] {
+  margin-bottom: 4.2rem;
+}
+
+.mb-\[4\.3rem\] {
+  margin-bottom: 4.3rem;
+}
+
+.mt-\[-10\%\] {
+  margin-top: -10%;
+}
+
 .flex {
   display: flex;
 }
@@ -756,6 +812,22 @@ video {
   height: 30%;
 }
 
+.h-\[70\%\] {
+  height: 70%;
+}
+
+.h-\[30vh\DF\] {
+  height: 30vhß;
+}
+
+.h-\[30vh\] {
+  height: 30vh;
+}
+
+.max-h-\[30\%\] {
+  max-height: 30%;
+}
+
 .min-h-\[2rem\] {
   min-height: 2rem;
 }
@@ -802,6 +874,14 @@ video {
 
 .min-h-full {
   min-height: 100%;
+}
+
+.min-h-\[30\%\] {
+  min-height: 30%;
+}
+
+.min-h-\[25\%\] {
+  min-height: 25%;
 }
 
 .w-32 {
@@ -1466,6 +1546,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pt-\[5\.5rem\] {
+  padding-top: 5.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1737,6 +1821,42 @@ video {
 
   .midmobiles\:mt-\[-9\%\] {
     margin-top: -9%;
+  }
+
+  .midmobiles\:mt-\[10\%\] {
+    margin-top: 10%;
+  }
+
+  .midmobiles\:mt-\[7\%\] {
+    margin-top: 7%;
+  }
+
+  .midmobiles\:mt-\[8\%\] {
+    margin-top: 8%;
+  }
+
+  .midmobiles\:mt-\[4rem\] {
+    margin-top: 4rem;
+  }
+
+  .midmobiles\:mb-\[5\.3rem\] {
+    margin-bottom: 5.3rem;
+  }
+
+  .midmobiles\:mt-\[-15\%\] {
+    margin-top: -15%;
+  }
+
+  .midmobiles\:mt-\[-20\%\] {
+    margin-top: -20%;
+  }
+
+  .midmobiles\:mt-\[1rem\] {
+    margin-top: 1rem;
+  }
+
+  .midmobiles\:mt-\[-30\%\] {
+    margin-top: -30%;
   }
 
   .midmobiles\:text-\[1\.6rem\] {
