@@ -10,8 +10,6 @@ const taskHTML4 = "</p><p class='greyed striked font-1rem task-text-span'>";
 const taskHTML41 = "</p></div><div class='f'><i onclick='deleteTask(2,";
 const taskHTML5 = ")' class='trash-icon fa-solid fa-trash-can'></i></div></td>";
 
-let arrUpco = []; //array of keys - upcoming tasks for localStorage
-let arrComp = []; //array of keys - completed tasks for localStorage
 let i = 0;
 let timerMins = 0, counter = -1;
 let timerOpened = false;
@@ -99,7 +97,6 @@ function saveTask() {
             showTime = '';
         }
         console.log("CHECK THIS TIME ", totalTime);
-        
         $(".entered-list").val("");
         $(".description-input").val("");
         console.log(inputTaskText);
@@ -117,7 +114,7 @@ function saveTask() {
 function updateUpcomingTasks() { 
     $("#upcoming-tasks").empty();
     for (let k = 0; k < upcomingArr.length; k++) { 
-        let shTime = timeArr[k] + "s";
+        let shTime = timeArr[k] + "s"; //showTime
         if (timeArr[k] == -1) {
             shTime = '';
         }
@@ -140,13 +137,8 @@ $("#timer-submit").on("click", function(event) {
     counter++;
     event.preventDefault();
     timerMins = ($('#mins').val());
-    if (timerMins > 0) {
-        timerOpened = true;
-    }
-    // $("#mins").value = '';
+    if (timerMins > 0) { timerOpened = true; }
     console.log("Timer in Mins ", timerMins);
-    // $('#mins').val(0);
-    $('#formid')[0].reset();
     $("#timer-modal").toggleClass("hidden");
 })
 
