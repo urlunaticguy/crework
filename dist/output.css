@@ -904,6 +904,10 @@ video {
   width: 6rem;
 }
 
+.w-\[100vw\] {
+  width: 100vw;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -1571,6 +1575,10 @@ video {
 
 .text-\[1\.4rem\] {
   font-size: 1.4rem;
+}
+
+.text-\[3rem\] {
+  font-size: 3rem;
 }
 
 .font-bold {

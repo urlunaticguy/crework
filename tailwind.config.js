@@ -6,6 +6,7 @@ module.exports = {
             "./Week 4 - SignUp Login with JavaScript/**/*.{html,js}",
             "./Week 5/**/*.{html,js}",
             "./Week 7 - API Call Pokemon/**/*.{html,js}",
+            "./Week 8 - Console Calculator/**/*.{html,js}",
             "./Week 6 - ToDo/**/*.{html,js}"],
   theme: {
     extend: {
