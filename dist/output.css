@@ -708,6 +708,34 @@ video {
   margin-top: ;
 }
 
+.-mt-\[1rem\] {
+  margin-top: -1rem;
+}
+
+.-mt-\[0\.5rem\] {
+  margin-top: -0.5rem;
+}
+
+.-mt-\[0\.3rem\] {
+  margin-top: -0.3rem;
+}
+
+.-mt-\[0\.4rem\] {
+  margin-top: -0.4rem;
+}
+
+.mt-bhalf {
+  margin-top: 2rem;
+}
+
+.mt-\[4rem\] {
+  margin-top: 4rem;
+}
+
+.mt-\[10rem\] {
+  margin-top: 10rem;
+}
+
 .flex {
   display: flex;
 }
@@ -916,6 +944,38 @@ video {
   width: 100vw;
 }
 
+.w-\[1rem\] {
+  width: 1rem;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
+.w-3\/12 {
+  width: 25%;
+}
+
+.w-4\/12 {
+  width: 33.333333%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-\[30\%\] {
+  width: 30%;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -973,6 +1033,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .place-content-center {
   place-content: center;
 }
@@ -1025,6 +1089,24 @@ video {
   gap: 0.75rem;
 }
 
+.gap-x-4 {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
+.gap-y-8 {
+  row-gap: 2rem;
+}
+
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1063,6 +1145,14 @@ video {
 
 .border-\[3px\] {
   border-width: 3px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .border-t-2 {
@@ -1118,6 +1208,76 @@ video {
 .border-\[\#b3b3b3\] {
   --tw-border-opacity: 1;
   border-color: rgb(179 179 179 / var(--tw-border-opacity));
+}
+
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
+.border-yellow-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 179 8 / var(--tw-border-opacity));
+}
+
+.border-amber-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(245 158 11 / var(--tw-border-opacity));
+}
+
+.border-orange-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 88 12 / var(--tw-border-opacity));
+}
+
+.border-lime-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(101 163 13 / var(--tw-border-opacity));
+}
+
+.border-green-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(34 197 94 / var(--tw-border-opacity));
+}
+
+.border-emerald-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(16 185 129 / var(--tw-border-opacity));
+}
+
+.border-teal-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(20 184 166 / var(--tw-border-opacity));
+}
+
+.border-cyan-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(6 182 212 / var(--tw-border-opacity));
+}
+
+.border-sky-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(14 165 233 / var(--tw-border-opacity));
+}
+
+.border-blue-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
+}
+
+.border-indigo-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(99 102 241 / var(--tw-border-opacity));
+}
+
+.border-violet-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(139 92 246 / var(--tw-border-opacity));
+}
+
+.border-purple-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(168 85 247 / var(--tw-border-opacity));
 }
 
 .border-t-white {
@@ -1426,6 +1586,10 @@ video {
   padding: 1rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1519,6 +1683,11 @@ video {
 .py-\[1rem\] {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .pt-2 {
@@ -1776,6 +1945,76 @@ video {
   cursor: pointer;
 }
 
+.hover\:border-yellow-600:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(202 138 4 / var(--tw-border-opacity));
+}
+
+.hover\:border-amber-600:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(217 119 6 / var(--tw-border-opacity));
+}
+
+.hover\:border-orange-700:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(194 65 12 / var(--tw-border-opacity));
+}
+
+.hover\:border-red-600:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
+}
+
+.hover\:border-lime-700:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(77 124 15 / var(--tw-border-opacity));
+}
+
+.hover\:border-green-600:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(22 163 74 / var(--tw-border-opacity));
+}
+
+.hover\:border-emerald-600:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(5 150 105 / var(--tw-border-opacity));
+}
+
+.hover\:border-teal-600:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(13 148 136 / var(--tw-border-opacity));
+}
+
+.hover\:border-cyan-600:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(8 145 178 / var(--tw-border-opacity));
+}
+
+.hover\:border-sky-600:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(2 132 199 / var(--tw-border-opacity));
+}
+
+.hover\:border-blue-600:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(37 99 235 / var(--tw-border-opacity));
+}
+
+.hover\:border-indigo-600:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(79 70 229 / var(--tw-border-opacity));
+}
+
+.hover\:border-violet-600:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(124 58 237 / var(--tw-border-opacity));
+}
+
+.hover\:border-purple-600:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(147 51 234 / var(--tw-border-opacity));
+}
+
 .hover\:bg-slate-200:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
@@ -1921,6 +2160,143 @@ video {
   background-color: rgb(147 51 234 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:fill-white:hover {
+  fill: #fff;
+}
+
+.hover\:fill-gray-500:hover {
+  fill: #6b7280;
+}
+
+.hover\:fill-gray-300:hover {
+  fill: #d1d5db;
+}
+
+.hover\:fill-gray-400:hover {
+  fill: #9ca3af;
+}
+
+.hover\:fill-black:hover {
+  fill: #000;
+}
+
+.hover\:fill-gray-800:hover {
+  fill: #1f2937;
+}
+
+.hover\:fill-gray-200:hover {
+  fill: #e5e7eb;
+}
+
+.hover\:fill-blue-200:hover {
+  fill: #bfdbfe;
+}
+
+.hover\:fill-yellow-400:hover {
+  fill: #facc15;
+}
+
+.hover\:fill-yellow-300:hover {
+  fill: #fde047;
+}
+
+.hover\:fill-red-600:hover {
+  fill: #dc2626;
+}
+
+.hover\:fill-green-300:hover {
+  fill: #86efac;
+}
+
+.hover\:fill-green-400:hover {
+  fill: #4ade80;
+}
+
+.hover\:fill-green-500:hover {
+  fill: #22c55e;
+}
+
+.hover\:fill-lime-300:hover {
+  fill: #bef264;
+}
+
+.hover\:fill-red-300:hover {
+  fill: #fca5a5;
+}
+
+.hover\:fill-red-500:hover {
+  fill: #ef4444;
+}
+
+.hover\:fill-purple-600:hover {
+  fill: #9333ea;
+}
+
+.hover\:fill-violet-600:hover {
+  fill: #7c3aed;
+}
+
+.hover\:fill-indigo-600:hover {
+  fill: #4f46e5;
+}
+
+.hover\:fill-blue-600:hover {
+  fill: #2563eb;
+}
+
+.hover\:fill-sky-600:hover {
+  fill: #0284c7;
+}
+
+.hover\:fill-cyan-600:hover {
+  fill: #0891b2;
+}
+
+.hover\:fill-teal-600:hover {
+  fill: #0d9488;
+}
+
+.hover\:fill-emerald-600:hover {
+  fill: #059669;
+}
+
+.hover\:fill-green-600:hover {
+  fill: #16a34a;
+}
+
+.hover\:fill-lime-700:hover {
+  fill: #4d7c0f;
+}
+
+.hover\:fill-yellow-600:hover {
+  fill: #ca8a04;
+}
+
+.hover\:fill-amber-600:hover {
+  fill: #d97706;
+}
+
+.hover\:fill-orange-700:hover {
+  fill: #c2410c;
+}
+
+.hover\:font-normal:hover {
+  font-weight: 400;
+}
+
+.hover\:font-semibold:hover {
+  font-weight: 600;
+}
+
+.hover\:font-bold:hover {
+  font-weight: 700;
+}
+
 .hover\:text-green-500:hover {
   --tw-text-opacity: 1;
   color: rgb(34 197 94 / var(--tw-text-opacity));
@@ -2033,6 +2409,18 @@ video {
     margin-top: 20rem;
   }
 
+  .applewebsite\:-mt-\[0rem\] {
+    margin-top: -0rem;
+  }
+
+  .applewebsite\:mt-\[10rem\] {
+    margin-top: 10rem;
+  }
+
+  .applewebsite\:block {
+    display: block;
+  }
+
   .applewebsite\:flex {
     display: flex;
   }
@@ -2041,7 +2429,49 @@ video {
     display: none;
   }
 
+  .applewebsite\:w-full {
+    width: 100%;
+  }
+
+  .applewebsite\:w-\[30\%\] {
+    width: 30%;
+  }
+
+  .applewebsite\:w-\[25\%\] {
+    width: 25%;
+  }
+
+  .applewebsite\:w-\[27\%\] {
+    width: 27%;
+  }
+
+  .applewebsite\:w-\[28\%\] {
+    width: 28%;
+  }
+
+  .applewebsite\:rounded-lg {
+    border-radius: 0.5rem;
+  }
+
+  .applewebsite\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .applewebsite\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .applewebsite\:text-buttons {
+    font-size: 1rem;
+  }
+
+  .applewebsite\:text-\[1\.2rem\] {
+    font-size: 1.2rem;
+  }
+
+  .applewebsite\:text-\[1rem\] {
     font-size: 1rem;
   }
 }

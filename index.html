@@ -12,154 +12,305 @@
     <header class="bg-black text-white h-20 flex justify-center items-center">
         <h1 class=" text-[1.2rem] font-semibold">Crework Home Page</h1>
     </header>
-    <div id="buttonsforweeks" class=" bg-slate-800 flex justify-center items-center flex-col gap-4 py-[1rem]">
+    <div id="buttonsforweeks" class=" bg-slate-800 flex justify-center items-center flex-wrap gap-x-8 gap-y-8 py-[1rem]">
         <!-- week one goes here -->
-        <button class=" flex justify-between text-start px-[20px] py-[8px] items-center bg-red-500 hover:bg-red-600 text-white min-h-[2rem] min-w-full applewebsite3:min-w-[30vw] applewebsite3:rounded-full">
+        <div class=" bg-red-500 hover:bg-red-600 flex flex-col gap-2 w-[100%] applewebsite:w-[30%] items-center border-[3px] border-red-500 hover:border-red-600 applewebsite:rounded-lg p-1">
             <a href="./Week 1 - Login Signup using HTML/SignUp.html" target="_blank">
-                <strong>Week 1 - SignUp Login using HTML</strong>
+                <img class=" hidden applewebsite:w-full applewebsite:block" src="./images/weekOneSS.png" alt="Week One Screenshot">
             </a>
-            <a href="https://github.com/urlunaticguy/crework/tree/main/Week%201%20-%20Login%20Signup%20using%20HTML" target="_blank"><img class=" w-10" src="./githubSVG.svg" alt=""></a>
-        </button>
+            <div class=" flex gap-2 w-full px-2 -mt-[0.4rem] applewebsite:-mt-[0rem] applewebsite:px-0">
+                <button class=" w-[90%] flex justify-between text-start px-1 items-center text-white min-h-[2rem]">
+                    <a href="./Week 1 - Login Signup using HTML/SignUp.html" target="_blank">
+                        <strong class=" text-[1rem] font-semibold hover:underline">Week 1 - SignUp Login using HTML</strong>
+                    </a>
+                </button>
+                <a class=" w-[10%]" href="https://github.com/urlunaticguy/crework/tree/main/Week%201%20-%20Login%20Signup%20using%20HTML" target="_blank">
+                    <svg class=" w-10 fill-white hover:fill-red-600 hover:bg-white border-2 border-white rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
 
         <!-- week two goes here -->
-        <button class="flex justify-between text-start px-[20px] py-[8px] items-center bg-orange-600 hover:bg-orange-700 text-white min-h-[2rem] min-w-full applewebsite3:min-w-[30vw] applewebsite3:rounded-full" > 
+        <div class=" bg-orange-600 hover:bg-orange-700 flex flex-col gap-2 w-[100%] applewebsite:w-[30%] items-center border-[3px] border-orange-600 hover:border-orange-700 applewebsite:rounded-lg p-1">
             <a href="./Week 2 - Login Signup using HTML and CSS/signUp.html" target="_blank">
-                <strong>Week 2 - SignUp Login using HTML and CSS</strong>
+                <img class=" hidden applewebsite:w-full applewebsite:block" src="./images/weekTwoSS.png" alt="Week Two Screenshot">
             </a>
-            <a href="https://github.com/urlunaticguy/crework/tree/main/Week%202%20-%20Login%20Signup%20using%20HTML%20and%20CSS" target="_blank"><img class=" w-10" src="./githubSVG.svg" alt=""></a>
-        </button>
+            <div class=" flex gap-2 w-full px-2 -mt-[0.4rem] applewebsite:-mt-[0rem] applewebsite:px-0">
+                <button class=" w-[90%] flex justify-between text-start px-1 items-center text-white min-h-[2rem]">
+                    <a href="./Week 2 - Login Signup using HTML and CSS/signUp.html" target="_blank">
+                        <strong class=" text-[1rem] font-semibold hover:underline">Week 2 - SignUp Login using HTML and CSS</strong>
+                    </a>
+                </button>
+                <a class=" w-[10%]" href="https://github.com/urlunaticguy/crework/tree/main/Week%202%20-%20Login%20Signup%20using%20HTML%20and%20CSS" target="_blank">
+                    <svg class=" w-10 fill-white hover:fill-orange-700 hover:bg-white border-2 border-white rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
 
         <!-- week three goes here -->
-        <button class="flex justify-between text-start px-[20px] py-[8px] items-center bg-amber-500 hover:bg-amber-600 text-white min-h-[2rem] min-w-full applewebsite3:min-w-[30vw] applewebsite3:rounded-full">
+        <div class=" bg-amber-500 hover:bg-amber-600 flex flex-col gap-2 w-[100%] applewebsite:w-[30%] items-center border-[3px] border-amber-500 hover:border-amber-600 applewebsite:rounded-lg p-1">
             <a href="./Week 3 - Cloning Website using Tailwind CSS/weekThree.html" target="_blank">
-                <strong>Week 3 - Clone a website using Tailwind</strong>
+                <img class=" hidden applewebsite:w-full applewebsite:block" src="./images//weekThreeSS.png" alt="Week Three Screenshot">
             </a>
-            <a href="https://github.com/urlunaticguy/crework/tree/main/Week%203%20-%20Cloning%20Website%20using%20Tailwind%20CSS" target="_blank"><img class=" w-10" src="./githubSVG.svg" alt=""></a>
-        </button>
+            <div class=" flex gap-2 w-full px-2 -mt-[0.4rem] applewebsite:-mt-[0rem] applewebsite:px-0">
+                <button class=" w-[90%] flex justify-between text-start px-1 items-center text-white min-h-[2rem]">
+                    <a href="./Week 3 - Cloning Website using Tailwind CSS/weekThree.html" target="_blank">
+                        <strong class=" text-[1rem] font-semibold hover:underline">Week 3 - Clone a website using Tailwind</strong>
+                    </a>
+                </button>
+                <a class=" w-[10%]" href="https://github.com/urlunaticguy/crework/tree/main/Week%203%20-%20Cloning%20Website%20using%20Tailwind%20CSS" target="_blank">
+                    <svg class=" w-10 fill-white hover:fill-amber-600 hover:bg-white border-2 border-white rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
 
         <!-- week four goes here -->
-        <button class="flex justify-between text-start px-[20px] py-[8px] items-center bg-yellow-500 hover:bg-yellow-600 text-white min-h-[2rem] min-w-full applewebsite3:min-w-[30vw] applewebsite3:rounded-full">
+        <div class=" bg-yellow-500 hover:bg-yellow-600 flex flex-col gap-2 w-[100%] applewebsite:w-[30%] items-center border-[3px] border-yellow-500 hover:border-yellow-600 applewebsite:rounded-lg p-1">
             <a href="./Week 4 - SignUp Login with JavaScript/week4.html" target="_blank">
-                <strong>Week 4 - SignUp and Login with JS</strong>
-                <p class="text-[0.8rem]">
-                    HTML, TailwindCSS, VanillaJS
-                </p>
+                <img class=" hidden applewebsite:w-full applewebsite:block" src="./images/weekFourSS.png" alt="Week Four Screenshot">
             </a>
-            <a href="https://github.com/urlunaticguy/crework/tree/main/Week%204%20-%20SignUp%20Login%20with%20JavaScript" target="_blank"><img class=" w-10" src="./githubSVG.svg" alt=""></a>
-        </button>
+            <div class=" flex gap-2 w-full px-2 -mt-[0.4rem] applewebsite:-mt-[0rem] applewebsite:px-0">
+                <button class=" w-[90%] flex justify-between text-start px-1 items-center text-white min-h-[2rem]">
+                    <a href="./Week 4 - SignUp Login with JavaScript/week4.html" target="_blank">
+                        <strong class=" text-[1rem] font-semibold hover:underline">Week 4 - SignUp and Login with JS</strong>
+                    </a>
+                </button>
+                <a class=" w-[10%]" href="https://github.com/urlunaticguy/crework/tree/main/Week%204%20-%20SignUp%20Login%20with%20JavaScript" target="_blank">
+                    <svg class=" w-10 fill-white hover:fill-yellow-600 hover:bg-white border-2 border-white rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
 
         <!-- week five goes here -->
-        <button class="flex justify-between text-start px-[20px] py-[8px] items-center bg-lime-600 hover:bg-lime-700 text-white min-h-[2rem] min-w-full applewebsite3:min-w-[30vw] applewebsite3:rounded-full">
+        <div class=" bg-lime-600 hover:bg-lime-700 flex flex-col gap-2 w-[100%] applewebsite:w-[30%] items-center border-[3px] border-lime-600 hover:border-lime-700 applewebsite:rounded-lg p-1">
             <a href="./Week 5/week5.html" target="_blank">
-                <strong>Week 5 - Random Color Generator</strong>
-                <p class="text-[0.8rem]">
-                    HTML, TailwindCSS, VanillaJS
-                </p>
+                <img class=" hidden applewebsite:w-full applewebsite:block" src="./images/weekFiveSS.png" alt="Week Five Screenshot">
             </a>
-            <a href="https://github.com/urlunaticguy/crework/tree/main/Week%205" target="_blank"><img class=" w-10" src="./githubSVG.svg" alt=""></a>
-        </button>
+            <div class=" flex gap-2 w-full px-2 -mt-[0.4rem] applewebsite:-mt-[0rem] applewebsite:px-0">
+                <button class=" w-[90%] flex justify-between text-start px-1 items-center text-white min-h-[2rem]">
+                    <a href="./Week 5/week5.html" target="_blank">
+                        <strong class=" text-[1rem] font-semibold hover:underline">Week 5 - Random Color Generator</strong>
+                        <p class="text-[0.8rem]">
+                            HTML, TailwindCSS, VanillaJS
+                        </p>
+                    </a>
+                </button>
+                <a class=" w-[10%]" href="https://github.com/urlunaticguy/crework/tree/main/Week%205" target="_blank">
+                    <svg class=" w-10 fill-white hover:fill-lime-700 hover:bg-white border-2 border-white rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
 
         <!-- week six goes here -->
-        <button class="flex justify-between text-start px-[20px] py-[8px] items-center bg-green-500 hover:bg-green-600 text-white min-h-[2rem] min-w-full applewebsite3:min-w-[30vw] applewebsite3:rounded-full">
+        <div class=" bg-green-500 hover:bg-green-600 flex flex-col gap-2 w-[100%] applewebsite:w-[30%] items-center border-[3px] border-green-500 hover:border-green-600 applewebsite:rounded-lg p-1">
             <a href="./Week 6 - ToDo/index.htm" target="_blank">
-                <strong>Week 6 - ToDo App</strong>
-                <p class="text-[0.8rem]">
-                    HTML, CSS, jQuery
-                </p>
+                <img class=" hidden applewebsite:w-full applewebsite:block" src="./images/weekSixSS.png" alt="Week Six Screenshot">
             </a>
-            <a href="https://github.com/urlunaticguy/crework/tree/main/Week%206%20-%20ToDo" target="_blank"><img class=" w-10" src="./githubSVG.svg" alt=""></a>
-        </button>
+            <div class=" flex gap-2 w-full px-2 -mt-[0.4rem] applewebsite:-mt-[0rem] applewebsite:px-0">
+                <button class=" w-[90%] flex justify-between text-start px-1 items-center text-white min-h-[2rem]">
+                    <a href="./Week 6 - ToDo/index.htm" target="_blank">
+                        <strong class=" text-[1rem] font-semibold hover:underline">Week 6 - ToDo App</strong>
+                        <p class="text-[0.8rem]">
+                            HTML, CSS, jQuery
+                        </p>
+                    </a>
+                </button>
+                <a class=" w-[10%]" href="https://github.com/urlunaticguy/crework/tree/main/Week%206%20-%20ToDo" target="_blank">
+                    <svg class=" w-10 fill-white hover:fill-green-600 hover:bg-white border-2 border-white rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
 
         <!-- week seven goes here -->
-        <button class="flex justify-between text-start px-[20px] py-[8px] items-center bg-emerald-500 hover:bg-emerald-600 text-white min-h-[2rem] min-w-full applewebsite3:min-w-[30vw] applewebsite3:rounded-full">
+        <div class=" bg-emerald-500 hover:bg-emerald-600 flex flex-col gap-2 w-[100%] applewebsite:w-[30%] items-center border-[3px] border-emerald-500 hover:border-emerald-600 applewebsite:rounded-lg p-1">
             <a href="./Week 7 - API Call Pokemon/index.html" target="_blank">
-                <strong>Week 7 - API Calls - Pokémon</strong>
-                <p class="text-[0.8rem]">
-                    HTML, CSS, Tailwind, jQuery, Async-Await, Axios
-                </p>
+                <img class=" hidden applewebsite:w-full applewebsite:block" src="./images/weekSevenSS.png" alt="Week Seven Screenshot">
             </a>
-            <a href="https://github.com/urlunaticguy/crework/tree/main/Week%207%20-%20API%20Call%20Pokemon" target="_blank"><img class=" w-10" src="./githubSVG.svg" alt=""></a>
-        </button>
+            <div class=" flex gap-2 w-full px-2 -mt-[0.4rem] applewebsite:-mt-[0rem] applewebsite:px-0">
+                <button class=" w-[90%] flex justify-between text-start px-1 items-center text-white min-h-[2rem]">
+                    <a href="./Week 7 - API Call Pokemon/index.html" target="_blank">
+                        <strong class=" text-[1rem] font-semibold hover:underline">Week 7 - API Calls - Pokémon</strong>
+                        <p class="text-[0.8rem]">
+                            HTML, CSS, Tailwind, jQuery, Async-Await, Axios
+                        </p>
+                    </a>
+                </button>
+                <a class=" w-[10%]" href="https://github.com/urlunaticguy/crework/tree/main/Week%207%20-%20API%20Call%20Pokemon" target="_blank">
+                    <svg class=" w-10 fill-white hover:fill-emerald-600 hover:bg-white border-2 border-white rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
 
         <!-- week eight goes here -->
-        <button class="flex justify-between text-start px-[20px] py-[8px] items-center bg-teal-500 hover:bg-teal-600 text-white min-h-[2rem] min-w-full applewebsite3:min-w-[30vw] applewebsite3:rounded-full">
+        <div class=" bg-teal-500 hover:bg-teal-600 flex flex-col gap-2 w-[100%] applewebsite:w-[30%] items-center border-[3px] border-teal-500 hover:border-teal-600 applewebsite:rounded-lg p-1">
             <a href="./Week 8 - Console Calculator/index.html" target="_blank">
-                <strong>Week 8 - Console Calculator using OOPs</strong>
-                <p class="text-[0.8rem]">
-                    JavaScript Object and Methods
-                </p>
+                <img class=" hidden applewebsite:w-full applewebsite:block" src="./images/weekEightSS.png" alt="Week Eight Screenshot">
             </a>
-            <a href="https://github.com/urlunaticguy/crework/tree/main/Week%208%20-%20Console%20Calculator" target="_blank"><img class=" w-10" src="./githubSVG.svg" alt=""></a>
-        </button>
+            <div class=" flex gap-2 w-full px-2 -mt-[0.4rem] applewebsite:-mt-[0rem] applewebsite:px-0">
+                <button class=" w-[90%] flex justify-between text-start px-1 items-center text-white min-h-[2rem]">
+                    <a href="./Week 8 - Console Calculator/index.html" target="_blank">
+                        <strong class=" text-[1rem] font-semibold hover:underline">Week 8 - Console Calculator using OOPs</strong>
+                        <p class="text-[0.8rem]">
+                            JavaScript Object and Methods
+                        </p>
+                    </a>
+                </button>
+                <a class=" w-[10%]" href="https://github.com/urlunaticguy/crework/tree/main/Week%208%20-%20Console%20Calculator" target="_blank">
+                    <svg class=" w-10 fill-white hover:fill-teal-600 hover:bg-white border-2 border-white rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
 
-        <!-- add hackathon project one link here -->
-        <button class="flex justify-between text-start px-[20px] py-[8px] items-center bg-cyan-500 hover:bg-cyan-600 text-white min-h-[2rem] min-w-full applewebsite3:min-w-[30vw] applewebsite3:rounded-full">
+        <!-- september hackathon project one link here -->
+        <div class=" bg-cyan-500 hover:bg-cyan-600 flex flex-col gap-2 w-[100%] applewebsite:w-[30%] items-center border-[3px] border-cyan-500 hover:border-cyan-600 applewebsite:rounded-lg p-1">
             <a href="https://crework-hackathon-kbc.netlify.app/" target="_blank">
-                <strong>Crework Hackathon - Project 1 - KBC Game</strong>
-                <p class="text-[0.8rem]">
-                    Kaun Banega CreworkPati
-                </p>
+                <img class=" hidden applewebsite:w-full applewebsite:block" src="./images/hackathonProjectOne.png" alt="Crework Hackathon Project One Screenshot">
             </a>
-            <a href="https://github.com/urlunaticguy/crework-Hackathon" target="_blank"><img class=" w-10" src="./githubSVG.svg" alt=""></a>
-        </button>
+            <div class=" flex gap-2 w-full px-2 -mt-[0.4rem] applewebsite:-mt-[0rem] applewebsite:px-0">
+                <button class=" w-[90%] flex justify-between text-start px-1 items-center text-white min-h-[2rem]">
+                    <a href="https://crework-hackathon-kbc.netlify.app/" target="_blank">
+                        <strong class=" text-[1rem] font-semibold hover:underline">Crework Hackathon - Project 1 - KBC Game</strong>
+                        <p class="text-[0.8rem]">
+                            Play Kaun Banega CreworkPati
+                        </p>
+                    </a>
+                </button>
+                <a class=" w-[10%]" href="https://github.com/urlunaticguy/crework-Hackathon" target="_blank">
+                    <svg class=" w-10 fill-white hover:fill-cyan-600 hover:bg-white border-2 border-white rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
 
-        <!-- add hackathon project two link here -->
-        <button class="flex justify-between text-start px-[20px] py-[8px] items-center bg-sky-500 hover:bg-sky-600 text-white min-h-[2rem] min-w-full applewebsite3:min-w-[30vw] applewebsite3:rounded-full">
+        <!-- september hackathon project two link here -->
+        <div class=" bg-sky-500 hover:bg-sky-600 flex flex-col gap-2 w-[100%] applewebsite:w-[30%] items-center border-[3px] border-sky-500 hover:border-sky-600 applewebsite:rounded-lg p-1">
             <a href="https://hackathon-2-7txm.vercel.app/" target="_blank">
-                <strong>Crework Hackathon - Project 2 - Flag Game</strong>
-                <p class="text-[0.8rem]">
-                    Guess the Flag of the country
-                </p>
+                <img class=" hidden applewebsite:w-full applewebsite:block" src="./images/hackathonProjectTwo.png" alt="Crework Hackathon Project Two Screenshot">
             </a>
-            <a href="https://github.com/urlunaticguy/Hackathon-2" target="_blank"><img class=" w-10" src="./githubSVG.svg" alt=""></a>
-        </button>
+            <div class=" flex gap-2 w-full px-2 -mt-[0.4rem] applewebsite:-mt-[0rem] applewebsite:px-0">
+                <button class=" w-[90%] flex justify-between text-start px-1 items-center text-white min-h-[2rem]">
+                    <a href="https://hackathon-2-7txm.vercel.app/" target="_blank">
+                        <strong class=" text-[1rem] font-semibold hover:underline">Crework Hackathon - Project 2 - Flag Game</strong>
+                        <p class="text-[0.8rem]">
+                            Guess the Flag of the country
+                        </p>
+                    </a>
+                </button>
+                <a class=" w-[10%]" href="https://github.com/urlunaticguy/Hackathon-2" target="_blank">
+                    <svg class=" w-10 fill-white hover:fill-sky-600 hover:bg-white border-2 border-white rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
 
         <!-- add react month 3 week one here -->
-        <button class="flex justify-between text-start px-[20px] py-[8px] items-center bg-blue-500 hover:bg-blue-600 text-white min-h-[2rem] min-w-full applewebsite3:min-w-[30vw] applewebsite3:rounded-full">
+        <div class=" bg-blue-500 hover:bg-blue-600 flex flex-col gap-2 w-[100%] applewebsite:w-[30%] items-center border-[3px] border-blue-500 hover:border-blue-600 applewebsite:rounded-lg p-1">
             <a href="https://curious-panda-9afff2.netlify.app/" target="_blank">
-                <strong>Week 9 - React : Login & SignUp</strong>
-                <p class="text-[0.8rem]">
-                    React (class components)
-                </p>
+                <img class=" hidden applewebsite:w-full applewebsite:block" src="./images/weekNineSS.png" alt="React Week One Screenshot">
             </a>
-            <a href="https://github.com/urlunaticguy/crework-react-w1-loginSignup" target="_blank"><img class=" w-10" src="./githubSVG.svg" alt=""></a>
-        </button>
+            <div class=" flex gap-2 w-full px-2 -mt-[0.4rem] applewebsite:-mt-[0rem] applewebsite:px-0">
+                <button class=" w-[90%] flex justify-between text-start px-1 items-center text-white min-h-[2rem]">
+                    <a href="https://curious-panda-9afff2.netlify.app/" target="_blank">
+                        <strong class=" text-[1rem] font-semibold hover:underline">Week 9 - React : Login & SignUp</strong>
+                        <p class="text-[0.8rem]">
+                            React (class components)
+                        </p>
+                    </a>
+                </button>
+                <a class=" w-[10%]" href="https://github.com/urlunaticguy/crework-react-w1-loginSignup" target="_blank">
+                    <svg class=" w-10 fill-white hover:fill-blue-600 hover:bg-white border-2 border-white rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
 
         <!-- add react month 3 week two here -->
-        <button class="flex justify-between text-start px-[20px] py-[8px] items-center bg-indigo-500 hover:bg-indigo-600 text-white min-h-[2rem] min-w-full applewebsite3:min-w-[30vw] applewebsite3:rounded-full">
+        <div class=" bg-indigo-500 hover:bg-indigo-600 flex flex-col gap-2 w-[100%] applewebsite:w-[30%] items-center border-[3px] border-indigo-500 hover:border-indigo-600 applewebsite:rounded-lg p-1">
             <a href="https://imaginative-salmiakki-9cf5ac.netlify.app/" target="_blank">
-                <strong>Week 10 - React : Weather API</strong>
-                <p class="text-[0.8rem]">
-                    React
-                </p>
+                <img class=" hidden applewebsite:w-full applewebsite:block" src="./images/weekTenSS.png" alt="React Week Two Screenshot">
             </a>
-            <a href="https://github.com/urlunaticguy/crework-react-w2-API-CALLS" target="_blank"><img class=" w-10" src="./githubSVG.svg" alt=""></a>
-        </button>
+            <div class=" flex gap-2 w-full px-2 -mt-[0.4rem] applewebsite:-mt-[0rem] applewebsite:px-0">
+                <button class=" w-[90%] flex justify-between text-start px-1 items-center text-white min-h-[2rem]">
+                    <a href="https://imaginative-salmiakki-9cf5ac.netlify.app/" target="_blank">
+                        <strong class=" text-[1rem] font-semibold hover:underline">Week 10 - React : Weather API</strong>
+                        <p class="text-[0.8rem]">
+                            React
+                        </p>
+                    </a>
+                </button>
+                <a class=" w-[10%]" href="https://github.com/urlunaticguy/crework-react-w2-API-CALLS" target="_blank">
+                    <svg class=" w-10 fill-white hover:fill-indigo-600 hover:bg-white border-2 border-white rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
 
         <!-- add react month 3 week three here -->
-        <button class="flex justify-between text-start px-[20px] py-[8px] items-center bg-violet-500 hover:bg-violet-600 text-white min-h-[2rem] min-w-full applewebsite3:min-w-[30vw] applewebsite3:rounded-full">
+        <div class=" bg-violet-500 hover:bg-violet-600 flex flex-col gap-2 w-[100%] applewebsite:w-[30%] items-center border-[3px] border-violet-500 hover:border-violet-600 applewebsite:rounded-lg p-1">
             <a href="https://gamestopcreworksouvik.netlify.app/" target="_blank">
-                <strong>Week 11 - React : E-Commerce Site</strong>
-                <p class="text-[0.8rem]">
-                    React
-                </p>
+                <img class=" hidden applewebsite:w-full applewebsite:block" src="./images/weekElevenSS.png" alt="React Week Three Screenshot">
             </a>
-            <a href="https://github.com/urlunaticguy/crework-react-week3-eCommerceGamesStop" target="_blank"><img class=" w-10" src="./githubSVG.svg" alt=""></a>
-        </button>
+            <div class=" flex gap-2 w-full px-2 -mt-[0.4rem] applewebsite:-mt-[0rem] applewebsite:px-0">
+                <button class=" w-[90%] flex justify-between text-start px-1 items-center text-white min-h-[2rem]">
+                    <a href="https://gamestopcreworksouvik.netlify.app/" target="_blank">
+                        <strong class=" text-[1rem] font-semibold hover:underline">Week 11 - React : E-Commerce Site</strong>
+                        <p class="text-[0.8rem]">
+                            React
+                        </p>
+                    </a>
+                </button>
+                <a class=" w-[10%]" href="https://github.com/urlunaticguy/crework-react-week3-eCommerceGamesStop" target="_blank">
+                    <svg class=" w-10 fill-white hover:fill-violet-600 hover:bg-white border-2 border-white rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
 
         <!-- add react month 3 week four here -->
-        <button class="flex justify-between text-start px-[20px] py-[8px] items-center bg-purple-500 hover:bg-purple-600 text-white min-h-[2rem] min-w-full applewebsite3:min-w-[30vw] applewebsite3:rounded-full">
+        <div class=" bg-purple-500 hover:bg-purple-600 flex flex-col gap-2 w-[100%] applewebsite:w-[30%] items-center border-[3px] border-purple-500 hover:border-purple-600 applewebsite:rounded-lg p-1">
             <a href="https://brilliant-choux-d68755.netlify.app/" target="_blank">
-                <strong>Week 12 - React : Task Manager</strong>
-                <p class="text-[0.8rem]">
-                    React and Hooks
-                </p>
+                <img class=" hidden applewebsite:w-full applewebsite:block" src="./images/weekTwelveSS.png" alt="React Week Four Screenshot">
             </a>
-            <a href="https://github.com/urlunaticguy/crework-react-week4-taskmanager" target="_blank"><img class=" w-10" src="./githubSVG.svg" alt=""></a>
-        </button>
+            <div class=" flex gap-2 w-full px-2 -mt-[0.4rem] applewebsite:-mt-[0rem] applewebsite:px-0">
+                <button class=" w-[90%] flex justify-between text-start px-1 items-center text-white min-h-[2rem]">
+                    <a href="https://brilliant-choux-d68755.netlify.app/" target="_blank">
+                        <strong class=" text-[1rem] font-semibold hover:underline">Week 12 - React : Task Manager</strong>
+                        <p class="text-[0.8rem]">
+                            React Hooks, useRef
+                        </p>
+                    </a>
+                </button>
+                <a class=" w-[10%]" href="https://github.com/urlunaticguy/crework-react-week4-taskmanager" target="_blank">
+                    <svg class=" w-10 fill-white hover:fill-purple-600 hover:bg-white border-2 border-white rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
     </div>
     <footer class="bg-black text-white h-20 flex justify-center items-center">
-        <span class=" text-[1.2rem]">Developed by <a class=" hover:text-green-500 cursor-pointer" href="https://github.com/urlunaticguy" target="_blank">Souvik Das</a> at <a class=" hover:text-yellow-500 cursor-pointer" href="https://crework.in/" target="_blank">CreWork.</a></span>
+        <span class=" text-[1.2rem]">Developed by <a class=" hover:text-green-500 cursor-pointer hover:underline" href="https://github.com/urlunaticguy" target="_blank">Souvik Das</a> at <a class=" hover:text-yellow-500 cursor-pointer hover:underline" href="https://crework.in/" target="_blank">CreWork.</a></span>
     </footer>
 </body>
 </html>
